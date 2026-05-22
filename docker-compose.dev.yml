@@ -1,0 +1,24 @@
+services:
+  neon-local:
+    image: neondatabase/neon_local:latest
+    container_name: acquisitions-neon-local
+    ports:
+      - '5432:5432'
+    env_file:
+      - .env.development
+
+  app:
+    build:
+      context: .
+      target: development
+    container_name: acquisitions-app-dev
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - .env.development
+    depends_on:
+      - neon-local
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    command: npm run dev

@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      target: production
+    container_name: acquisitions-app-prod
+    ports:
+      - '${PORT:-3000}:3000'
+    env_file:
+      - .env.production
+    restart: unless-stopped
