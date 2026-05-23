@@ -56,12 +56,10 @@ export const signin = async (req, res, next) => {
     const validationResult = signinSchema.safeParse(req.body);
 
     if (!validationResult.success) {
-      return res
-        .status(400)
-        .json({
-          error: 'Validation failed',
-          details: formatValidationError(validationResult.error),
-        });
+      return res.status(400).json({
+        error: 'Validation failed',
+        details: formatValidationError(validationResult.error),
+      });
     }
     const { email, password } = validationResult.data;
     const user = await validateUser(email, password);

@@ -1,10 +1,14 @@
+import request from 'supertest';
+import { describe, it, expect } from '@jest/globals';
 import app from '#src/app.js';
-import { request, describe, it, expect } from 'supertest';
 
 describe('API Endpoints', () => {
   describe('GET /health', () => {
     it('should return health status', async () => {
-      const response = await request(app).get('/health').expect(200);
+      const response = await request(app)
+        .get('/health')
+        .expect(200);
+
       expect(response.body).toHaveProperty('status', 'OK');
       expect(response.body).toHaveProperty('timestamp');
       expect(response.body).toHaveProperty('uptime');
@@ -12,8 +16,11 @@ describe('API Endpoints', () => {
   });
 
   describe('GET /api', () => {
-    it('should return API messsage', async () => {
-      const response = await request(app).get('/api').expect(200);
+    it('should return API message', async () => {
+      const response = await request(app)
+        .get('/api')
+        .expect(200);
+
       expect(response.body).toHaveProperty(
         'message',
         'Acquisition API is running'
@@ -23,8 +30,14 @@ describe('API Endpoints', () => {
 
   describe('GET /nonexistent', () => {
     it('should return 404 error', async () => {
-      const response = await request(app).get('/nonexistent').expect(404);
-      expect(response.body).toHaveProperty('error', 'Route not found');
+      const response = await request(app)
+        .get('/nonexistent')
+        .expect(404);
+
+      expect(response.body).toHaveProperty(
+        'error',
+        'Route not found'
+      );
     });
   });
 });

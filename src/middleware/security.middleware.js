@@ -46,12 +46,10 @@ const securityMiddleware = async (req, res, next) => {
         path: req.path,
         method: req.method,
       });
-      return res
-        .status(403)
-        .json({
-          error: 'Forbidden',
-          details: 'Shield traffic is not allowed.',
-        });
+      return res.status(403).json({
+        error: 'Forbidden',
+        details: 'Shield traffic is not allowed.',
+      });
     }
 
     if (decision.isDenied() && decision.reason.isRateLimit()) {
@@ -67,12 +65,10 @@ const securityMiddleware = async (req, res, next) => {
     next();
   } catch (error) {
     console.error('Arcjet middleware error:', error);
-    return res
-      .status(500)
-      .json({
-        error: 'Internal Server Error',
-        details: 'Something went wrong with security middleware.',
-      });
+    return res.status(500).json({
+      error: 'Internal Server Error',
+      details: 'Something went wrong with security middleware.',
+    });
   }
 };
 
