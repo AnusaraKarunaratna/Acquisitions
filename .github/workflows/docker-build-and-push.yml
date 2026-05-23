@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -42,7 +43,7 @@ jobs:
           tags: |
             type=ref,event=branch
             type=sha,format=short
-            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
             type=raw,value=${{ steps.timestamp.outputs.value }}
 
       - name: Build and push Docker image
