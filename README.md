@@ -78,7 +78,3 @@ docker compose -f docker-compose.prod.yml --env-file .env.production down
 The application DB client in `src/config/database.js` checks `USE_NEON_LOCAL`/`NODE_ENV` and, for dev, routes Neon serverless HTTP traffic to:
 
 - `http://neon-local:5432/sql`
-
-
-
-
