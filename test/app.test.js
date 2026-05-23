@@ -5,9 +5,7 @@ import app from '#src/app.js';
 describe('API Endpoints', () => {
   describe('GET /health', () => {
     it('should return health status', async () => {
-      const response = await request(app)
-        .get('/health')
-        .expect(200);
+      const response = await request(app).get('/health').expect(200);
 
       expect(response.body).toHaveProperty('status', 'OK');
       expect(response.body).toHaveProperty('timestamp');
@@ -17,9 +15,7 @@ describe('API Endpoints', () => {
 
   describe('GET /api', () => {
     it('should return API message', async () => {
-      const response = await request(app)
-        .get('/api')
-        .expect(200);
+      const response = await request(app).get('/api').expect(200);
 
       expect(response.body).toHaveProperty(
         'message',
@@ -30,14 +26,9 @@ describe('API Endpoints', () => {
 
   describe('GET /nonexistent', () => {
     it('should return 404 error', async () => {
-      const response = await request(app)
-        .get('/nonexistent')
-        .expect(404);
+      const response = await request(app).get('/nonexistent').expect(404);
 
-      expect(response.body).toHaveProperty(
-        'error',
-        'Route not found'
-      );
+      expect(response.body).toHaveProperty('error', 'Route not found');
     });
   });
 });
