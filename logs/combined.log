@@ -742,3 +742,9 @@
 {"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:03:52 +0000] \"GET /api/users/3 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
 {"level":"info","message":"Deleting user id: 3 by requester: 3","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:05:19 +0000] \"DELETE /api/users/3 HTTP/1.1\" 200 138 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:35:45 +0000] \"GET /health HTTP/1.1\" 200 74 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:35:45 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:35:45 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:37:56 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:37:56 +0000] \"GET /api HTTP/1.1\" 200 40 \"-\" \"-\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [23/May/2026:14:37:56 +0000] \"GET /nonexistent HTTP/1.1\" 404 27 \"-\" \"-\"","service":"acquisitions-api"}
