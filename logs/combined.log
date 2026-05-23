@@ -695,3 +695,50 @@
 {"level":"info","message":"User example@email.com validated successfully:","service":"acquisitions-api"}
 {"level":"info","message":"User signed in successfully: example@email.com","service":"acquisitions-api"}
 {"level":"info","message":"::ffff:192.168.65.1 - - [22/May/2026:20:20:39 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 129 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:27:59 +0000] \"GET /api/users HTTP/1.1\" 404 148 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:28:30 +0000] \"GET /api/users/ HTTP/1.1\" 404 149 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"error","message":"Login error: Invalid email or password","service":"acquisitions-api","stack":"Error: Invalid email or password\n    at validateUser (file:///app/src/services/auth.service.js:39:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signin (file:///app/src/controllers/auth.controller.js:58:22)"}
+{"level":"error","message":"Signin error Invalid email or password","service":"acquisitions-api","stack":"Error: Invalid email or password\n    at validateUser (file:///app/src/services/auth.service.js:39:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async signin (file:///app/src/controllers/auth.controller.js:58:22)"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:31:23 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 401 37 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:31:30 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 400 92 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User anusarakarunaratna@gmail.com created successfully:","service":"acquisitions-api"}
+{"level":"info","message":"User signed up successfully: anusarakarunaratna@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:32:03 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 140 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User anusarakarunaratna@gmail.com validated successfully:","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: anusarakarunaratna@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:32:27 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 140 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:32:46 +0000] \"GET /api/users HTTP/1.1\" 404 148 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching all users","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:34:40 +0000] \"GET /api/users/ HTTP/1.1\" 200 555 \"-\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:34:41 +0000] \"GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1\" 404 187 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:34:42 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"-\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Mobile Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:48:57 +0000] \"GET /api/users/:id HTTP/1.1\" 400 86 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:49:13 +0000] \"GET /api/users/:4 HTTP/1.1\" 400 86 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:50:41 +0000] \"GET /api/users/:3 HTTP/1.1\" 400 86 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 3","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:50:56 +0000] \"GET /api/users/3 HTTP/1.1\" 200 218 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 2","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:54:27 +0000] \"GET /api/users/2 HTTP/1.1\" 200 206 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 3","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:54:37 +0000] \"GET /api/users/3 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 2","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:54:45 +0000] \"GET /api/users/2 HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 1","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:12:54:51 +0000] \"GET /api/users/1 HTTP/1.1\" 200 209 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:00:42 +0000] \"GET /api/users/1 HTTP/1.1\" 401 35 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:00:46 +0000] \"GET /api/users/2 HTTP/1.1\" 401 35 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:00:49 +0000] \"GET /api/users/3 HTTP/1.1\" 401 35 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:01:24 +0000] \"GET /api/users/id HTTP/1.1\" 400 86 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:01:31 +0000] \"GET /api/users/2 HTTP/1.1\" 401 35 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"User anusarakarunaratna@gmail.com validated successfully:","service":"acquisitions-api"}
+{"level":"info","message":"User signed in successfully: anusarakarunaratna@gmail.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:02:15 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 200 140 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:02:43 +0000] \"POST /api/users/1 HTTP/1.1\" 404 151 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:03:03 +0000] \"GET /api/users/1 HTTP/1.1\" 403 48 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 3 by requester: 3","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:03:11 +0000] \"GET /api/users/3 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:03:18 +0000] \"GET /api/users/2 HTTP/1.1\" 403 48 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Fetching user by id: 3 by requester: 3","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:03:52 +0000] \"GET /api/users/3 HTTP/1.1\" 200 218 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
+{"level":"info","message":"Deleting user id: 3 by requester: 3","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:192.168.65.1 - - [23/May/2026:13:05:19 +0000] \"DELETE /api/users/3 HTTP/1.1\" 200 138 \"-\" \"PostmanRuntime/7.54.0\"","service":"acquisitions-api"}
